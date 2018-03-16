@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="funciones.js"></script>
+    <title>Introduccion JS</title>
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Peso Lunar</th>
+            <th>Promedio</th>
+            <th>Conversor de Galones a litros</th>
+            <th>Conversor de Celcius a Farenheit y Kelvin </th>
+            <th>Conversor de cm a metros y kilometros</th>
+        </tr>
+        <tr>
+            <th>Ingrese su peso: <input type="number" placeholder="Peso a calcular" autocomplete="off" id="pesoIng" step="0.1"></th>
+            <th>Nota primer corte: <input type="number" placeholder="Ingresa tu nota" autocomplete="off" id="PC" min="0" max="5" step="0.1"></th>
+            <th>Ingrese la cantidad de galones: <input type="number" placeholder="Galones a convertir" autocomplete="off" id="Gal" step="0.1"></th>
+            <th>Seleccione la temperatura:
+                <select size="3" id="initialtemp">
+                <option value="c" selected>C</option>
+                <option value="f">F</option>
+                <option value="k">K</option>
+                </select>
+            </th>
+            <th>Ingrese la cantidad de centimetros: <input type="number" placeholder="Centimetros" autocomplete="off" id="CM" step="1"></th>
+        </tr>
+        <tr>
+            <th>Tu peso en la luna es: <input type="number" placeholder="Resultado" autocomplete="off" id="pesoLun" disabled></th>
+            <th>Nota segundo corte: <input type="number" placeholder="Ingresa tu nota" autocomplete="off" id="SC" min="0" max="5" step="0.1"></th>
+            <th>Cantidad de litros: <input type="number" placeholder="Equivalente en litros" autocomplete="off" id="Lit" disabled></th>
+            <th>Ingrese la temperatura en grados Celcius: <input type="number" placeholder="Celcius" autocomplete="off" id="Cel" step="0.1"></th>
+            <th>Resultado en metros: <input type="number" placeholder="Metros" autocomplete="off" id="M" disabled></th>
+        </tr>
+        <tr>
+            <th><button onclick="calcularPeso()"> Calcula tu peso en la luna! </button></th>
+            <th>Nota tercer corte: <input type="number" placeholder="Ingresa tu nota" autocomplete="off" id="TC" min="0" max="5" step="0.1"></th>
+            <th><button onclick="calcularLitros()"> Calcula los litros! </button></th>
+            <th>Ingrese la temperatura en grados Farenheit: <input type="number" placeholder="Farenheit" autocomplete="off" id="Far" step="0.1"></th>
+            <th>Resultado en kilometros: <input type="number" placeholder="Kilometros" autocomplete="off" id="KM" disabled></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Promedio: <input type="number" placeholder="Promedio" autocomplete="off" id="Prom" min="0" max="5" disabled></th>
+            <th></th>
+            <th>Ingrese la temperatura en grados Kelvin: <input type="number" placeholder="Kelvin" autocomplete="off" id="Kel" step="0.1"></th>
+            <th><button onclick="calcularDistancia()"> Calcula las distancias! </button></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><button onclick="promedio()"> Calcula tu promedio! </button></th>
+            <th></th>
+            <th><button onclick="calcularTemperatura()"> Calcula la temperatura! </button></th>
+            <th></th>
+        </tr>
+    </table>
+</body>
+
+</html>
